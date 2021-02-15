@@ -4,8 +4,7 @@
 [![recommended IDEs](https://img.shields.io/badge/recommended%20IDEs%20-GitHub%20Codespaces%20%7C%20VS%20Code-blue)](.devcontainer/README.md)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Template repository with generic [GitHub Codespaces](https://docs.github.com/en/github/developing-online-with-codespaces)
-configuration, YAML linting etc
+Verifies a Jira configuration through executable specifications
 
 ## Suggestions / bug reports / contributions
 
