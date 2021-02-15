@@ -28,7 +28,7 @@ jobs:
         uses: getgauge/setup-gauge@master
         with:
           gauge-version: master
-          gauge-plugins: python, html-report, screenshot
+          gauge-plugins: python, html-report
 
       - name: FTs
         run: gauge run specs
