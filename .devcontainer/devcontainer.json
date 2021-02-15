@@ -62,9 +62,9 @@
 		"timonwong.shellcheck",
 		"exiasr.hadolint",
 		"golang.Go",
-		// "ms-python.python",
-		// "ms-python.vscode-pylance",
-		// "getgauge.gauge",
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+		"getgauge.gauge",
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
