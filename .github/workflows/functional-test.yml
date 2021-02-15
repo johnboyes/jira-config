@@ -24,14 +24,25 @@ jobs:
         with:
           python-version: 3.8.6
 
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
       - name: Install Gauge
         uses: getgauge/setup-gauge@master
         with:
           gauge-version: master
-          gauge-plugins: python, html-report
+          gauge-plugins: python, html-report, screenshot
 
       - name: FTs
-        run: gauge run specs
+        env:
+          JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
+          JIRA_ADMIN_USERNAME: ${{ secrets.JIRA_ADMIN_USERNAME }}
+          JIRA_ADMIN_PASSWORD: ${{ secrets.JIRA_ADMIN_PASSWORD }}
+          INTERNAL_EMPLOYEE_USERNAME: ${{ secrets.INTERNAL_EMPLOYEE_USERNAME }}
+          INTERNAL_EMPLOYEE_PASSWORD: ${{ secrets.INTERNAL_EMPLOYEE_PASSWORD }}
+        run: gauge run specs --tags \!in-progress
 
       - name: Upload logs
         uses: actions/upload-artifact@v2.2.2
