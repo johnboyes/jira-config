@@ -95,3 +95,14 @@ jobs:
           golangci_lint_flags: "-c .golangci.yml"
           level: "error"
           reporter: github-check
+
+  black: # Black is an opinionated Python linter
+    name: runner / black formatter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - uses: reviewdog/action-black@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          level: error
+          reporter: github-check
