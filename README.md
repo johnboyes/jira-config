@@ -1,4 +1,4 @@
-# agilepathway-template
+# jira-config
 
 [![reviewdog](../../workflows/reviewdog/badge.svg)](../../actions?query=workflow%3Areviewdog+event%3Apush+branch%3Amaster)
 [![recommended IDEs](https://img.shields.io/badge/recommended%20IDEs%20-GitHub%20Codespaces%20%7C%20VS%20Code-blue)](.devcontainer/README.md)
