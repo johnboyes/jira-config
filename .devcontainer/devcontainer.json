@@ -26,7 +26,7 @@
 		"go.lintFlags": [
 			"--fast"
 		],
-		"python.pythonPath": "/opt/python/latest/bin/python",
+		"python.pythonPath": "/usr/local/bin/python",
 		"python.linting.enabled": true,
 		"python.linting.pylintEnabled": true,
 		"python.formatting.provider": "black",
