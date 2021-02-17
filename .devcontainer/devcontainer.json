@@ -1,7 +1,15 @@
 {
-	"name": "GitHub Codespaces (Default)",
+	"name": "Python 3",
 	"build": {
-		"dockerfile": "Dockerfile"
+		"dockerfile": "Dockerfile",
+		"context": "..",
+		"args": {
+			// Update 'VARIANT' to pick a Python version: 3, 3.6, 3.7, 3.8, 3.9
+			"VARIANT": "3.8",
+			// Options
+			"INSTALL_NODE": "false",
+			"NODE_VERSION": "lts/*"
+		}
 	},
 	"settings": {
 		"editor.formatOnSave": true,
@@ -43,17 +51,6 @@
 		"files.autoSave": "afterDelay",
 		"files.autoSaveDelay": 500,
 	},
-	"remoteUser": "codespace",
-	"overrideCommand": false,
-	"workspaceMount": "source=${localWorkspaceFolder},target=/home/codespace/workspace,type=bind,consistency=cached",
-	"workspaceFolder": "/home/codespace/workspace",
-	"runArgs": [
-		"--cap-add=SYS_PTRACE",
-		"--security-opt",
-		"seccomp=unconfined",
-		"--privileged",
-		"--init"
-	],
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"GitHub.vscode-pull-request-github",
@@ -69,5 +66,7 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// "oryx build" will automatically install your dependencies and attempt to build your project
-	"postCreateCommand": "oryx build -p virtualenv_name=.venv || echo 'Could not auto-build. Skipping.'"
+	"postCreateCommand": "pip install -r requirements.txt",
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode"
 }
