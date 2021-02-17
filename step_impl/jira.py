@@ -1,4 +1,3 @@
-from getgauge.python import before_suite
 from jira import JIRA
 import os
 
