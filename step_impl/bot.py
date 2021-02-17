@@ -2,6 +2,8 @@ from getgauge.python import before_suite
 from step_impl.jira import Jira
 import os
 
+INTERNAL_EMPLOYEES_GROUP = "jira-internal-employee_users"
+
 
 class Bot(object):
     jira_admin = None
