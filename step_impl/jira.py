@@ -1,12 +1,11 @@
 from jira import JIRA
-import os
 
 
 class Jira:
-    def __init__(self, username, password):
+    def __init__(self, base_url, username, password):
         self.jira = JIRA(
             auth=(username, password),
-            options={"server": os.getenv("JIRA_BASE_URL")},
+            options={"server": base_url},
         )
         self.username = username
 
