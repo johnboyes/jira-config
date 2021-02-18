@@ -106,3 +106,14 @@ jobs:
           github_token: ${{ secrets.github_token }}
           level: error
           reporter: github-check
+
+  pyflakes: # Python code analysis
+    name: runner / pyflakes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - name: pyflakes
+        uses: reviewdog/action-pyflakes@v1.3.0
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-check
