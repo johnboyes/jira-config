@@ -17,15 +17,6 @@
 			"source.fixAll.markdownlint": true
 		},
 		"terminal.integrated.shell.linux": "/bin/bash",
-		"go.useGoProxyToCheckForToolUpdates": false,
-		"go.useLanguageServer": true,
-		"go.gopath": "/go",
-		"go.goroot": "/usr/local/go",
-		"go.toolsGopath": "/go/bin",
-		"go.lintTool": "golangci-lint",
-		"go.lintFlags": [
-			"--fast"
-		],
 		"python.pythonPath": "/usr/local/bin/python",
 		"python.linting.enabled": true,
 		"python.linting.pylintEnabled": true,
@@ -62,7 +53,6 @@
 		"davidanson.vscode-markdownlint",
 		"timonwong.shellcheck",
 		"exiasr.hadolint",
-		"golang.Go",
 		"ms-python.python",
 		"ms-python.vscode-pylance",
 		"getgauge.gauge",

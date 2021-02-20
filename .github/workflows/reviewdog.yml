@@ -84,18 +84,6 @@ jobs:
           language: en
           disabled_rules: "DOUBLE_PUNCTUATION,WHITESPACE_RULE,EN_QUOTES,DASH_RULE,WORD_CONTAINS_UNDERSCORE,UPPERCASE_SENTENCE_START,ARROWS,COMMA_PARENTHESIS_WHITESPACE,UNLIKELY_OPENING_PUNCTUATION,SENTENCE_WHITESPACE,CURRENCY,EN_UNPAIRED_BRACKETS,PHRASE_REPETITION,PUNCTUATION_PARAGRAPH_END,METRIC_UNITS_EN_US,ENGLISH_WORD_REPEAT_BEGINNING_RULE,GITHUB" # yamllint disable-line
 
-  golangci-lint:
-    name: runner / golangci-lint
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2.3.4
-      - uses: reviewdog/action-golangci-lint@v1.18
-        with:
-          github_token: ${{ secrets.github_token }}
-          golangci_lint_flags: "-c .golangci.yml"
-          level: "error"
-          reporter: github-check
-
   black: # Black is an opinionated Python linter
     name: runner / black formatter
     runs-on: ubuntu-latest
