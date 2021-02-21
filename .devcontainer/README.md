@@ -1,9 +1,8 @@
-# Agile Pathway Codespaces
+# VS Code Remote Container & Codespaces configuration
 
-Extends [the Ubuntu-based default, large, multi-language universal container for GitHub Codespaces](https://github.com/microsoft/vscode-dev-containers/blob/master/containers/codespaces-linux/README.md)
+Extends [the standard Python container definition](https://github.com/microsoft/vscode-dev-containers/tree/master/containers/python-3)
 
-You can develop entirely in the cloud using Codespaces, an integrated development environment (IDE) on GitHub.
+Use this definition to make your development environment (IDE) either:
 
-Modify the `devcontainer.json` and `Dockerfile` files to [customise the Codespace configuration](https://docs.github.com/en/github/developing-online-with-codespaces/configuring-codespaces-for-your-project#creating-a-custom-codespace-configuration).
-
-[GitHub Codespaces documentation](https://docs.github.com/en/github/developing-online-with-codespaces)
+- a [VS Code remote container](https://code.visualstudio.com/docs/remote/containers)
+- a [GitHub Codespace](https://github.com/features/codespaces/)
