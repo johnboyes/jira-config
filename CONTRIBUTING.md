@@ -3,8 +3,6 @@
 Firstly thanks for thinking of contributing - the project is [open source](https://opensource.guide/how-to-contribute/)
 and all contributions are very welcome :slightly_smiling_face: :boom: :thumbsup:
 
-[How to report a bug or suggest a new feature](#how-to-report-a-bug-or-suggest-a-new-feature)
-
 [How to make a contribution](#how-to-make-a-contribution)
 
 [Local development](#local-development)
@@ -13,13 +11,8 @@ and all contributions are very welcome :slightly_smiling_face: :boom: :thumbsup:
 * [Codespaces](#codespaces)
 * [Tools and technologies](#tools-and-technologies)
 
-## How to report a bug or suggest a new feature
-
-[Create an issue](../../issues), describing the bug or new feature in as much detail as you can.
-
 ## How to make a contribution
 
-* [Create an issue](../../issues) describing the change you are proposing.
 * [Create a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
 The project uses the _[fork and pull model](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-collaborative-development-models)_:
   * [Fork the project](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks)
@@ -48,8 +41,11 @@ and open it in Codespaces - easy!
 
 ### Tools and technologies
 
-* [GitHub Actions](https://docs.github.com/en/actions)
-* [Dependabot](https://docs.github.com/en/github/administering-a-repository/keeping-your-dependencies-updated-automatically)
+* [Gauge](https://gauge.org)
+* [Python](https://www.python.org/)
+  * [Black](https://github.com/psf/black) for Python formatting
+  * [Flake8](https://flake8.pycqa.org/) for Python style checks
+* [GitHub Actions](https://docs.github.com/en/actions) for CI
 
 ## Updating dependencies
 
