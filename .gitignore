@@ -10,6 +10,11 @@ reports
 # Gauge - python compiled files
 *.pyc
 
+# Gauge - secrets
+secrets.properties
+# ignore the singular too, just in case someone uses it as the file name
+secret.properties
+
 
 # Created by https://www.gitignore.io/api/visualstudiocode
 # Edit at https://www.gitignore.io/?templates=visualstudiocode
